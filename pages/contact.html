@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Gregory Wright</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="../styles/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<nav id="topNav" class="mainNav">
+			<div class="container">
+				<div class="navigationbar">
+				<div id="title">Gregory Wright</div>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<i class="fa fa-bars"></i>
+					  </a>
+					<a href="../index.html">Home</a>
+					<a href="resume.html">Resume</a>
+					<a href="portfolio.html">Portfolio</a>
+					<a class="current" href="#">Contact</a>
+				</div>	  
+			</div>
+		</nav>
+		<div class="section contact container">
+			Phone: (860) 938-1592<br>
+			Email: <a href="mailto:gregorywright4036@gmail.com">gregorywright4036@gmail.com</a><br>
+			LinkedIn: <a href="https://www.linkedin.com/in/gregory-wright2">linkedin.com/in/gregory-wright2</a>
+		</div>
+		<footer id="footer">
+			<p>&copy; 2019</p>
+		</footer>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("topNav");
+			  if (x.classList.contains("responsive")) {
+			    x.classList.remove("responsive");
+			  } else {
+			    x.classList.add("responsive");
+			  }
+			}
+		</script>
+
+		<script>
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+				var x = document.getElementById("topNav");
+				if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+					x.classList.add("smaller");
+				} else {
+					x.classList.remove("smaller");
+				}
+			}
+		</script>
+
+		<script>
+			AOS.init();
+		</script>
+	</body>
+	
+</html>
