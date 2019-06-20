@@ -191,7 +191,4 @@
 	.smaller.responsive ~ .section {
 		padding-top: 9px;
 	}
-	#title {
-		font-size: 25px;
-	}
 }
