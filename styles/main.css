@@ -109,7 +109,7 @@
 	color: #FFFFFF;
 	padding-top: 125px;
 }
-.extracurricular {
+.community-involvement {
 	background-image: url("../images/eagle.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -152,7 +152,8 @@
 		background-color: #233237;
 		background-image: none;
 	}
-	.extracurricular {
+	.community-involvement {
+		padding-top: 100px;
 		background-color: #233237;
 		background-image: none;
 	}
