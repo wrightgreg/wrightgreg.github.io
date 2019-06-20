@@ -1,3 +1,7 @@
+#title {
+	font-size: 50px;
+	color: #FFFFFF;
+}
 .mainNav {
 	padding: 30px;
 	background-color: #233237;
@@ -105,7 +109,7 @@
 	color: #FFFFFF;
 	padding-top: 125px;
 }
-.community-involvement {
+.extracurricular {
 	background-image: url("../images/eagle.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -134,6 +138,9 @@
 	.mainNav.smaller {
 		padding: 0px 20px;
 	}
+	#title {
+		font-size: 25px;
+	}
 }
 @media screen and (max-width: 768px){
 	.professional-experience {
@@ -145,8 +152,7 @@
 		background-color: #233237;
 		background-image: none;
 	}
-	.community-involvement {
-		padding-top: 100px;
+	.extracurricular {
 		background-color: #233237;
 		background-image: none;
 	}
@@ -183,5 +189,8 @@
 	}
 	.smaller.responsive ~ .section {
 		padding-top: 9px;
+	}
+	#title {
+		font-size: 25px;
 	}
 }
