@@ -38,7 +38,7 @@ html body {
 	text-decoration: underline;
 	color: #EAC67A;
 }
-.section {
+section {
 	font-size: 16px;
 	line-height: 24px;
 }
@@ -167,7 +167,7 @@ html body {
 	    justify-content: space-between;
 	    padding: .5rem 1rem;
 	}
-	.section {
+	section {
 		padding-top: 170px;
 	}
 	.mainNav.smaller {
@@ -217,7 +217,7 @@ html body {
 	.mainNav.responsive a.icon {
 		float: right;
 	}
-	.section {
+	section {
 		padding-top: 150px;
 	}
 	.responsive ~ .section {
