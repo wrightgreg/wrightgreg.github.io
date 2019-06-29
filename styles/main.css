@@ -12,7 +12,7 @@ html body {
 }
 .mainNav {
 	padding: 30px;
-	background-color: #233237;
+	background-color: #FFFFFF;
 	color: #FFFFFF;
 	overflow: hidden;
 	transition: 0.4s;
@@ -20,27 +20,29 @@ html body {
 	width: 100%;
 	top: 0;
 	z-index: 99;
+	border-bottom: solid 2px #39393A;
 }
 .mainNav .icon {
 	display: none;
 }
 .mainNav a {
 	font-size: 20px;
-	color: #984B43;
+	color: #39393A;
 	font-weight: bold;
 	text-decoration: none;
 }
-.mainNav a:hover {
+.mainNav a:hover:not(:first-child) {
 	text-decoration: underline;
-	color: #EAC67A;
+	color: rgb(223, 0, 0);
 }
 .mainNav a.current {
 	text-decoration: underline;
-	color: #EAC67A;
+	color: rgb(223, 0, 0);
 }
 section {
 	font-size: 16px;
 	line-height: 24px;
+	padding-bottom: 100px;
 }
 .year {
 	float: right;
@@ -54,8 +56,7 @@ section {
 	font-weight: bold;
 	font-size: 10pt;
 	clear: both;
-	border-top: 3px solid #24221F;
-	margin-top: 30px;
+	border-top: 2px solid #39393A;
 	text-align: center;
 	padding: 20px 0px;
 }
@@ -96,6 +97,9 @@ section {
 }
 .contact a {
 	font-weight: bold;
+}
+.about-me {
+	padding-top: 100px;
 }
 .professional-experience {
 	background-image: url("../images/professional-experience.jpg");
@@ -166,7 +170,8 @@ section {
 	    padding: .5rem 1rem;
 	}
 	section {
-		padding-top: 170px;
+		padding-top: 210px;
+		padding-bottom: 100px;
 	}
 	.mainNav.smaller {
 		padding: 0px 20px;
@@ -190,7 +195,7 @@ section {
 		background-color: #233237;
 		background-image: none;
 	}
-	.mainNav a {
+	.mainNav a:not(:first-child) {
 		display: none;
 	}
 	.mainNav a.icon {
@@ -207,7 +212,7 @@ section {
 	.mainNav.smaller.responsive {
 		position: sticky;
 	}
-	.mainNav.responsive a {
+	.mainNav.responsive a:not(:first-child) {
 		display: block;
 		float: none;
 		text-align: left;
@@ -215,8 +220,12 @@ section {
 	.mainNav.responsive a.icon {
 		float: right;
 	}
+	.about-me {
+		padding-top: 60px;
+	}
 	section {
 		padding-top: 150px;
+		padding-bottom: 60px;
 	}
 	.responsive ~ .section {
 		padding-top: 150px;
@@ -230,5 +239,8 @@ section {
 	}
 	.hero-text {
 		font-size: 40px;
+	}
+	.headshot {
+		padding-top: 50px;
 	}
 }
