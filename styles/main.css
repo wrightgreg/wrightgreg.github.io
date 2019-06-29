@@ -135,8 +135,6 @@ section {
 	background-position: top;
 	position: relative;
 	height: 80%;
-	filter: blur(8px);
-	-webkit-filter: blur(8px);
 }
 .hero-text {
 	text-align: center;
