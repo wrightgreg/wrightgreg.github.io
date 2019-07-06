@@ -94,9 +94,11 @@ html body {
 * {
 	box-sizing: border-box;
 }
-#title {
+#title>a {
 	font-size: 50px;
-	color: #FFFFFF;
+	color: #39393A !important;
+	font-weight: bold;
+	text-decoration: none;
 }
 .mainNav {
 	padding: 30px;
@@ -113,7 +115,7 @@ html body {
 .mainNav .icon {
 	display: none;
 }
-.mainNav a {
+.mainNav a:not(:first-child) {
 	font-size: 20px;
 	color: #39393A;
 	font-weight: bold;
