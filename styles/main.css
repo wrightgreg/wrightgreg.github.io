@@ -218,7 +218,7 @@ section {
 	.mainNav a.icon {
 		float: right;
 		display: block;
-		padding-top: 5px;
+		padding-top:25px;
 	}
 	.mainNav.responsive {
 		position: absolute;
