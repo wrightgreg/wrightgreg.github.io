@@ -1,3 +1,91 @@
+@media screen and (min-width: 769px){
+	.navigationbar {
+		position: relative;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -ms-flex-pack: justify;
+	    justify-content: space-between;
+	    padding: .5rem 1rem;
+	}
+	section {
+		padding-top: 210px;
+		padding-bottom: 100px;
+	}
+	.mainNav.smaller {
+		padding: 0px 20px;
+	}
+	#title {
+		font-size: 25px;
+	}
+}
+@media screen and (max-width: 768px){
+	.professional-experience {
+		padding-top: 100px;
+		background-color: #233237;
+		background-image: none;
+	}
+	.education {
+		background-color: #233237;
+		background-image: none;
+	}
+	.community-involvement {
+		padding-top: 100px;
+		background-color: #233237;
+		background-image: none;
+	}
+	.mainNav a:not(:first-child) {
+		display: none;
+	}
+	.mainNav a.icon {
+		float: right;
+		display: block;
+		padding-top: 5px;
+	}
+	.mainNav.responsive {
+		position: absolute;
+	}
+	.mainNav.smaller {
+		padding: 7px;
+	}
+	.mainNav.smaller.responsive {
+		position: sticky;
+	}
+	.mainNav.responsive a:not(:first-child) {
+		display: block;
+		float: none;
+		text-align: left;
+	}
+	.mainNav.responsive a.icon {
+		float: right;
+	}
+	.about-me {
+		padding-top: 60px;
+	}
+	section {
+		padding-top: 150px;
+		padding-bottom: 60px;
+	}
+	.responsive ~ .section {
+		padding-top: 150px;
+	}
+	.smaller.responsive ~ .section {
+		padding-top: 9px;
+	}
+	#title {
+		font-size: 25px;
+		display: initial;
+	}
+	.hero-text {
+		font-size: 40px;
+	}
+	.headshot {
+		padding-top: 50px;
+	}
+}
 html body {
 	height: 100%;
 	width: 100%;
@@ -156,91 +244,18 @@ section {
 	padding: 20px;
 	width: 80%;
 }
-@media screen and (min-width: 769px){
-	.navigationbar {
-		position: relative;
-	    display: -ms-flexbox;
-	    display: flex;
-	    -ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	    -ms-flex-align: center;
-	    align-items: center;
-	    -ms-flex-pack: justify;
-	    justify-content: space-between;
-	    padding: .5rem 1rem;
-	}
-	section {
-		padding-top: 210px;
-		padding-bottom: 100px;
-	}
-	.mainNav.smaller {
-		padding: 0px 20px;
-	}
-	#title {
-		font-size: 25px;
-	}
+#fadeIn {
+	display: none;
+	text-align: center;
+	font-size: 100px;
+	padding-top: 15vh;
 }
-@media screen and (max-width: 768px){
-	.professional-experience {
-		padding-top: 100px;
-		background-color: #233237;
-		background-image: none;
-	}
-	.education {
-		background-color: #233237;
-		background-image: none;
-	}
-	.community-involvement {
-		padding-top: 100px;
-		background-color: #233237;
-		background-image: none;
-	}
-	.mainNav a:not(:first-child) {
-		display: none;
-	}
-	.mainNav a.icon {
-		float: right;
-		display: block;
-		padding-top: 5px;
-	}
-	.mainNav.responsive {
-		position: absolute;
-	}
-	.mainNav.smaller {
-		padding: 7px;
-	}
-	.mainNav.smaller.responsive {
-		position: sticky;
-	}
-	.mainNav.responsive a:not(:first-child) {
-		display: block;
-		float: none;
-		text-align: left;
-	}
-	.mainNav.responsive a.icon {
-		float: right;
-	}
-	.about-me {
-		padding-top: 60px;
-	}
-	section {
-		padding-top: 150px;
-		padding-bottom: 60px;
-	}
-	.responsive ~ .section {
-		padding-top: 150px;
-	}
-	.smaller.responsive ~ .section {
-		padding-top: 9px;
-	}
-	#title {
-		font-size: 25px;
-		display: initial;
-	}
-	.hero-text {
-		font-size: 40px;
-	}
-	.headshot {
-		padding-top: 50px;
-	}
+#slowFadeIn {
+	display: none;
+	left: 0;
+	right: 0;
+	position: absolute;
+	bottom: 200px;
+	font-size: 15px;
+	font-weight: bold;
 }
