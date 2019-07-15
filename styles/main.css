@@ -104,7 +104,7 @@ section {
 	padding-top: 100px;
 }
 .professional-experience {
-	background-image: url("../images/professional-experience.jpg");
+	background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(229,229,229,0) 100%), url("../images/professional-experience.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100%;
@@ -112,9 +112,11 @@ section {
 	height: 300px;
 	color: #FFFFFF;
 	padding-top: 125px;
+	padding-left: 20px;
 }
 .education {
-	background-image: url("../images/education.jpeg");
+	padding-left: 20px;
+	background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(229,229,229,0) 100%), url("../images/education.jpeg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100%;
@@ -124,7 +126,8 @@ section {
 	padding-top: 125px;
 }
 .community-involvement {
-	background-image: url("../images/eagle.jpg");
+	padding-left: 20px;
+	background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(229,229,229,0) 100%), url("../images/eagle.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100%;
