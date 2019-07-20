@@ -46,9 +46,15 @@ section {
 	line-height: 24px;
 	padding-bottom: 100px;
 }
+.job-title {
+	display: inline;
+}
 .year {
+	display: inline;
 	float: right;
-	font-weight: bold;
+}
+.job-description {
+	display: block;
 }
 #resumebutton {
 	font-weight: bold;
