@@ -119,6 +119,8 @@ section {
 	color: #FFFFFF;
 	padding-top: 125px;
 	padding-left: 20px;
+	font-size: 50px;
+	line-height: 56px;
 }
 .education {
 	padding-left: 20px;
@@ -130,6 +132,8 @@ section {
 	height: 300px;
 	color: #FFFFFF;
 	padding-top: 125px;
+	font-size: 50px;
+	line-height: 56px;
 }
 .community-involvement {
 	padding-left: 20px;
@@ -141,6 +145,8 @@ section {
 	height: 300px;
 	color: #FFFFFF;
 	padding-top: 125px;
+	font-size: 50px;
+	line-height: 56px;
 }
 .hero-image {
 	background-image: url("../images/hero.png");
@@ -167,7 +173,7 @@ section {
 	padding: 20px;
 	width: 80%;
 }
-#fadeIn {
+#resumeTitle {
 	display: none;
 	text-align: center;
 	font-size: 100px;
@@ -207,17 +213,33 @@ section {
 	}
 }
 @media screen and (max-width: 768px){
+	#resumeTitle {
+		font-size: 70px;
+	}
 	.professional-experience {
+		text-align: center;
+		padding-left: 0px;
+		font-size: 40px;
+		line-height: 40px;
 		padding-top: 100px;
 		background-color: #233237;
 		background-image: none;
 	}
 	.education {
+		padding-top: 125px;
+		text-align: center;
+		padding-left: 0px;
+		font-size: 40px;
+		line-height: 40px;
 		background-color: #233237;
 		background-image: none;
 	}
 	.community-involvement {
-		padding-top: 100px;
+		text-align: center;
+		padding-left: 0px;
+		font-size: 40px;
+		line-height: 40px;
+		padding-top: 125px;
 		background-color: #233237;
 		background-image: none;
 	}

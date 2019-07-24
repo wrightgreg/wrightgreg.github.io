@@ -1,4 +1,4 @@
 $(document).ready(function(){
-    $('#fadeIn').fadeIn('slow');
+    $('#resumeTitle').fadeIn('slow');
     $('#slowFadeIn').fadeIn(2000);
 });
