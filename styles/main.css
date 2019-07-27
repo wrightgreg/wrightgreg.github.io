@@ -6,6 +6,10 @@ html body {
 * {
 	box-sizing: border-box;
 }
+a {
+	text-decoration: none;
+	color: #000000;
+}
 #title>a {
 	font-size: 50px;
 	color: #39393A;
@@ -56,10 +60,6 @@ section {
 .job-description {
 	display: block;
 }
-#resumebutton {
-	font-weight: bold;
-	font-size: 120%
-}
 #footer {
 	font-weight: bold;
 	font-size: 10pt;
@@ -81,20 +81,29 @@ section {
 .resume {
 	color: #000000;
 }
-.resume-download {
+#resume-download {
+	margin: 20px auto;
+	margin-bottom: 0px;
 	height: 70px;
-	padding-top: 25px;
-	margin-top: 50px;
+	width: 700px;
+	padding: 25px 30px;
 	border: solid 2px #000000; 
-}
-.resume-download-link {
-	color: #000000;
 	text-align: center;
+	color: #000000;
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 20px;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
 }
-.resume-download-link:hover {
+.take-resume {
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 30px;
+	font-weight: bold;
+}
+#resume-download-link:hover {
 	color: #000000;
 	text-decoration: none;
 }
