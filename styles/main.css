@@ -1,10 +1,6 @@
 html body {
 	height: 100%;
 	width: 100%;
-	position: absolute;
-}
-* {
-	box-sizing: border-box;
 }
 a {
 	text-decoration: none;
@@ -16,45 +12,10 @@ a {
 	font-weight: bold;
 	text-decoration: none;
 }
-.mainNav {
-	padding: 30px;
-	background-color: #FFFFFF;
-	color: #FFFFFF;
-	overflow: hidden;
-	transition: 0.4s;
-	position: fixed;
-	width: 100%;
-	top: 0;
-	z-index: 99;
-	border-bottom: solid 2px #39393A;
-}
-.mainNav .icon {
-	display: none;
-}
-.mainNav a:not(:first-child) {
-	font-size: 20px;
-	color: #39393A;
-	font-weight: bold;
-	text-decoration: none;
-}
-.mainNav a:hover:not(:first-child) {
-	text-decoration: underline;
-	color: rgb(223, 0, 0);
-}
-.mainNav a.current {
-	text-decoration: underline;
-	color: rgb(223, 0, 0);
-}
-section {
-	font-size: 16px;
-	line-height: 24px;
-	padding-bottom: 100px;
-}
 .job-title {
 	display: inline;
 }
 .year {
-	display: inline;
 	float: right;
 }
 .job-description {
@@ -62,14 +23,11 @@ section {
 }
 #footer {
 	font-weight: bold;
-	font-size: 10pt;
-	clear: both;
+	font-size: 14px;
 	border-top: 2px solid #39393A;
 	text-align: center;
 	padding: 20px 0px;
-}
-.container {
-	overflow-x: hidden;
+	margin-top: 50px;
 }
 .portfolio img {
 	padding: 30px;
@@ -80,6 +38,9 @@ section {
 }
 .resume {
 	color: #000000;
+}
+.portfolio, .contact, .resume {
+	padding-top: 50px;
 }
 #resume-download {
 	margin: 20px auto;
@@ -160,16 +121,15 @@ section {
 .hero-image {
 	background-image: url("../images/hero.png");
 	background-repeat: no-repeat;
-	background-attachment: fixed;
 	background-size: cover;
-	background-position: top;
+	background-position: center;
 	position: relative;
-	height: 80%;
+	height: 700px;
 }
 .hero-text {
 	text-align: center;
 	position: absolute;
-	top: 45%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: #FFFFFF;
@@ -197,26 +157,15 @@ section {
 	font-size: 15px;
 	font-weight: bold;
 }
+@media screen and (max-width: 1199px){
+	.hero-image {
+		height: 400px;
+	}
+	.hero-text {
+		font-size: 40px;
+	}
+}
 @media screen and (min-width: 769px){
-	.navigationbar {
-		position: relative;
-	    display: -ms-flexbox;
-	    display: flex;
-	    -ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	    -ms-flex-align: center;
-	    align-items: center;
-	    -ms-flex-pack: justify;
-	    justify-content: space-between;
-	    padding: .5rem 1rem;
-	}
-	section {
-		padding-top: 210px;
-		padding-bottom: 100px;
-	}
-	.mainNav.smaller {
-		padding: 0px 20px;
-	}
 	#title {
 		font-size: 25px;
 	}
@@ -252,50 +201,12 @@ section {
 		background-color: #233237;
 		background-image: none;
 	}
-	.mainNav a:not(:first-child) {
-		display: none;
-	}
-	.mainNav a.icon {
-		float: right;
-		display: block;
-		padding-top:25px;
-	}
-	.mainNav.responsive {
-		position: absolute;
-	}
-	.mainNav.smaller {
-		padding: 7px;
-	}
-	.mainNav.smaller.responsive {
-		position: sticky;
-	}
-	.mainNav.responsive a:not(:first-child) {
-		display: block;
-		float: none;
-		text-align: left;
-	}
-	.mainNav.responsive a.icon {
-		float: right;
-	}
 	.about-me {
 		padding-top: 60px;
-	}
-	section {
-		padding-top: 150px;
-		padding-bottom: 60px;
-	}
-	.responsive ~ .section {
-		padding-top: 150px;
-	}
-	.smaller.responsive ~ .section {
-		padding-top: 9px;
 	}
 	#title {
 		font-size: 25px;
 		display: initial;
-	}
-	.hero-text {
-		font-size: 40px;
 	}
 	.headshot {
 		padding-top: 50px;
