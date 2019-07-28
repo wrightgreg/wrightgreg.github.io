@@ -11,14 +11,18 @@ a {
 	padding-bottom: 30px;
 	transition: all 0.5s;
 }
+.navbar-nav, .mr-auto {
+	flex: 1;
+	margin: auto !important;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 80px;
+}
 .navbar-theme {
 	background-color: #FFFFFF;
 }
 .navbar-brand {
 	font-size: 40px;
-}
-.active {
-	color: #bf2217;
 }
 .compressed {
 	padding-top: 5px;
@@ -178,6 +182,20 @@ a {
 	}
 	.hero-text {
 		font-size: 40px;
+	}
+}
+@media screen and (max-width: 991px) {
+	.navbar-nav, .mr-auto {
+		padding-left: 0px;
+	}
+	.navbar {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		transition: all 0.5s;
+	}
+	.compressed {
+		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 }
 @media screen and (min-width: 769px){
