@@ -11,9 +11,18 @@ a {
 	padding-bottom: 30px;
 	transition: all 0.5s;
 }
+.navbar-theme {
+	background-color: #FFFFFF;
+}
+.navbar-brand {
+	font-size: 40px;
+}
+.active {
+	color: #bf2217;
+}
 .compressed {
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 #title>a {
 	font-size: 50px;
