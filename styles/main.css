@@ -6,6 +6,15 @@ a {
 	text-decoration: none;
 	color: #000000;
 }
+.navbar {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	transition: all 0.5s;
+}
+.compressed {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 #title>a {
 	font-size: 50px;
 	color: #39393A;
@@ -18,10 +27,7 @@ a {
 .year {
 	float: right;
 }
-.job-description {
-	display: block;
-}
-#footer {
+.footer {
 	font-weight: bold;
 	font-size: 14px;
 	border-top: 2px solid #39393A;
