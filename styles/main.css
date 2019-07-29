@@ -275,9 +275,10 @@ a {
 }
 
 .navbar {
-  height: 120px;
-  -webkit-transition: height 0.5s;
-  transition: height 0.5s;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   z-index: 999;
   position: fixed;
   width: 100%;
@@ -307,7 +308,8 @@ a {
 }
 
 .compressed {
-  height: 70px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .footer {
