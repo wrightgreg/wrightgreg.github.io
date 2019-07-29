@@ -1,2 +1,6 @@
 styles/main.scss
 styles/main.css.map
+styles/_index.scss
+styles/_resume.scss
+styles/_portfolio.scss
+styles/_contact.scss

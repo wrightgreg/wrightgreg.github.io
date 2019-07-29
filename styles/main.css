@@ -1,4 +1,270 @@
-html body {
+.hero-image {
+  background-image: url("../images/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 70px;
+  height: 700px;
+}
+
+.hero-text {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #FFFFFF;
+  font-size: 60px;
+  font-weight: bold;
+  z-index: 2;
+  border: 3px solid #f1f1f1;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  width: 80%;
+}
+
+.about-me {
+  padding-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .headshot {
+    padding-top: 50px;
+  }
+}
+
+.resume {
+  color: #000000;
+  margin-top: 100px;
+  padding-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#resume-download {
+  margin: 20px auto;
+  margin-bottom: 0px;
+  height: 70px;
+  width: 700px;
+  padding: 25px 30px;
+  border: solid 2px #000000;
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.take-resume {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 30px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#resume-download-link:hover {
+  color: #000000;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#resumeTitle {
+  color: #000000;
+  display: none;
+  text-align: center;
+  font-size: 100px;
+  padding-top: 15vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#slowFadeIn {
+  display: none;
+  left: 0;
+  right: 0;
+  position: absolute;
+  bottom: 200px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.job-title {
+  display: inline;
+}
+
+.year {
+  float: right;
+}
+
+.professional-experience {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(229, 229, 229, 0))), url("../images/professional-experience.jpg");
+  background: linear-gradient(to bottom, black 0%, rgba(229, 229, 229, 0) 100%), url("../images/professional-experience.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  width: 100%;
+  height: 300px;
+  color: #FFFFFF;
+  padding-top: 125px;
+  padding-left: 20px;
+  font-size: 50px;
+  line-height: 56px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.education {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(229, 229, 229, 0))), url("../images/education.jpeg");
+  background: linear-gradient(to bottom, black 0%, rgba(229, 229, 229, 0) 100%), url("../images/education.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  width: 100%;
+  height: 300px;
+  color: #FFFFFF;
+  padding-top: 125px;
+  padding-left: 20px;
+  font-size: 50px;
+  line-height: 56px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.community-involvement {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(229, 229, 229, 0))), url("../images/eagle.jpg");
+  background: linear-gradient(to bottom, black 0%, rgba(229, 229, 229, 0) 100%), url("../images/eagle.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  width: 100%;
+  height: 300px;
+  color: #FFFFFF;
+  padding-top: 125px;
+  padding-left: 20px;
+  font-size: 50px;
+  line-height: 56px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+  .professional-experience {
+    background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(229, 229, 229, 0))), url("../images/professional-experience.jpg");
+    background: linear-gradient(to bottom, black 0%, rgba(229, 229, 229, 0) 100%), url("../images/professional-experience.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    width: 100%;
+    height: 300px;
+    color: #FFFFFF;
+    padding-top: 125px;
+    padding-left: 20px;
+    font-size: 50px;
+    line-height: 56px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+  }
+  .education {
+    background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(229, 229, 229, 0))), url("../images/education.jpeg");
+    background: linear-gradient(to bottom, black 0%, rgba(229, 229, 229, 0) 100%), url("../images/education.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    width: 100%;
+    height: 300px;
+    color: #FFFFFF;
+    padding-top: 125px;
+    padding-left: 20px;
+    font-size: 50px;
+    line-height: 56px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+  }
+  .community-involvement {
+    background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(229, 229, 229, 0))), url("../images/eagle.jpg");
+    background: linear-gradient(to bottom, black 0%, rgba(229, 229, 229, 0) 100%), url("../images/eagle.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    width: 100%;
+    height: 300px;
+    color: #FFFFFF;
+    padding-top: 125px;
+    padding-left: 20px;
+    font-size: 50px;
+    line-height: 56px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #resumeTitle {
+    font-size: 70px;
+  }
+  .professional-experience {
+    padding-top: 120px;
+    text-align: center;
+    padding-left: 0px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .education {
+    padding-top: 120px;
+    text-align: center;
+    padding-left: 0px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .community-involvement {
+    padding-top: 120px;
+    text-align: center;
+    padding-left: 0px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  #resumeTitle {
+    font-size: 70px;
+  }
+  .about-me {
+    padding-top: 60px;
+  }
+}
+
+.portfolio {
+  margin-top: 100px;
+}
+
+.portfolio img {
+  padding: 30px;
+  border: solid 2px black;
+}
+
+.portfolio h2 {
+  padding-top: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.portfolio, .contact {
+  padding-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact {
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact a {
+  font-weight: bold;
+}
+
+html, body {
   height: 100%;
   width: 100%;
 }
@@ -6,10 +272,6 @@ html body {
 a {
   text-decoration: none;
   color: #000000;
-}
-
-section {
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar {
@@ -48,49 +310,6 @@ section {
   height: 70px;
 }
 
-.hero-image {
-  background-image: url("../images/hero.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin-top: 70px;
-  height: 700px;
-}
-
-.hero-text {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #FFFFFF;
-  font-size: 60px;
-  font-weight: bold;
-  z-index: 2;
-  border: 3px solid #f1f1f1;
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 20px;
-  width: 80%;
-}
-
-#title > a {
-  font-size: 50px;
-  color: #39393A;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.job-title {
-  display: inline;
-}
-
-.year {
-  float: right;
-}
-
 .footer {
   font-weight: bold;
   font-size: 14px;
@@ -99,143 +318,6 @@ section {
   padding: 20px 0px;
   margin-top: 50px;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.portfolio {
-  margin-top: 100px;
-}
-
-.portfolio img {
-  padding: 30px;
-  border: solid 2px black;
-}
-
-.portfolio h2 {
-  padding-top: 60px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.resume {
-  color: #000000;
-  margin-top: 100px;
-}
-
-.portfolio, .contact, .resume {
-  padding-top: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-#resume-download {
-  margin: 20px auto;
-  margin-bottom: 0px;
-  height: 70px;
-  width: 700px;
-  padding: 25px 30px;
-  border: solid 2px #000000;
-  text-align: center;
-  color: #000000;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.take-resume {
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 30px;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-#resume-download-link:hover {
-  color: #000000;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.contact {
-  font-size: 16px;
-  line-height: 30px;
-  text-align: center;
-  margin-top: 100px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.contact a {
-  font-weight: bold;
-}
-
-.about-me {
-  padding-top: 100px;
-}
-
-.professional-experience {
-  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(229, 229, 229, 0))), url("../images/professional-experience.jpg");
-  background: linear-gradient(to bottom, black 0%, rgba(229, 229, 229, 0) 100%), url("../images/professional-experience.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
-  width: 100%;
-  height: 300px;
-  color: #FFFFFF;
-  padding-top: 125px;
-  padding-left: 20px;
-  font-size: 50px;
-  line-height: 56px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.education {
-  padding-left: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(229, 229, 229, 0))), url("../images/education.jpeg");
-  background: linear-gradient(to bottom, black 0%, rgba(229, 229, 229, 0) 100%), url("../images/education.jpeg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
-  width: 100%;
-  height: 300px;
-  color: #FFFFFF;
-  padding-top: 125px;
-  font-size: 50px;
-  line-height: 56px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.community-involvement {
-  padding-left: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(229, 229, 229, 0))), url("../images/eagle.jpg");
-  background: linear-gradient(to bottom, black 0%, rgba(229, 229, 229, 0) 100%), url("../images/eagle.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
-  width: 100%;
-  height: 300px;
-  color: #FFFFFF;
-  padding-top: 125px;
-  font-size: 50px;
-  line-height: 56px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-#resumeTitle {
-  display: none;
-  text-align: center;
-  font-size: 100px;
-  padding-top: 15vh;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-#slowFadeIn {
-  display: none;
-  left: 0;
-  right: 0;
-  position: absolute;
-  bottom: 200px;
-  font-size: 15px;
-  font-weight: bold;
 }
 
 @media screen and (max-width: 1199px) {
@@ -260,55 +342,6 @@ section {
   .compressed {
     padding-top: 5px;
     padding-bottom: 5px;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  #title {
-    font-size: 25px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #resumeTitle {
-    font-size: 70px;
-  }
-  .professional-experience {
-    text-align: center;
-    padding-left: 0px;
-    font-size: 40px;
-    line-height: 40px;
-    padding-top: 100px;
-    background-color: #233237;
-    background-image: none;
-  }
-  .education {
-    padding-top: 125px;
-    text-align: center;
-    padding-left: 0px;
-    font-size: 40px;
-    line-height: 40px;
-    background-color: #233237;
-    background-image: none;
-  }
-  .community-involvement {
-    text-align: center;
-    padding-left: 0px;
-    font-size: 40px;
-    line-height: 40px;
-    padding-top: 125px;
-    background-color: #233237;
-    background-image: none;
-  }
-  .about-me {
-    padding-top: 60px;
-  }
-  #title {
-    font-size: 25px;
-    display: initial;
-  }
-  .headshot {
-    padding-top: 50px;
   }
 }
 /*# sourceMappingURL=main.css.map */
