@@ -51,6 +51,12 @@
   }
 }
 
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .hero-text {
+    top: 250px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .headshot {
     padding-top: 50px;
@@ -290,6 +296,14 @@
   font-weight: bold;
 }
 
+.copywrite {
+  color: #C8C9C9;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 html, body {
   height: 100%;
   width: 100%;
@@ -337,14 +351,9 @@ a {
 
 .footer {
   background-color: #25282B;
-  color: #C8C9C9;
-  font-weight: bold;
-  font-size: 14px;
   border-top: 2px solid #39393A;
-  text-align: center;
   padding: 20px 0px;
   margin-top: 50px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 @media screen and (max-width: 991px) {
