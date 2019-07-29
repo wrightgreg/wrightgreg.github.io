@@ -1,17 +1,26 @@
+.image-container {
+  overflow: hidden;
+  height: 600px;
+  position: relative;
+}
+
 .hero-image {
   background-image: url("../images/hero.png");
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
-  margin-top: 70px;
-  height: 700px;
+  background-attachment: fixed;
+  top: 0;
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 .hero-text {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   position: absolute;
-  top: 45%;
+  top: 350px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -29,15 +38,32 @@
   padding-top: 100px;
 }
 
+@media screen and (max-width: 1199px) {
+  .image-container {
+    height: 400px;
+  }
+  .hero-image {
+    background-size: cover;
+  }
+  .hero-text {
+    font-size: 40px;
+    top: 275px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .headshot {
     padding-top: 50px;
+  }
+  .hero-text {
+    font-size: 40px;
+    top: 250px;
   }
 }
 
 .resume {
   color: #000000;
-  margin-top: 100px;
+  margin-top: 150px;
   padding-top: 50px;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -234,7 +260,7 @@
 }
 
 .portfolio {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .portfolio img {
@@ -256,7 +282,7 @@
   font-size: 16px;
   line-height: 30px;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 150px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -299,12 +325,9 @@ a {
   padding-left: 80px;
 }
 
-.navbar-theme {
-  background-color: #FFFFFF;
-}
-
 .navbar-brand {
   font-size: 40px;
+  font-weight: bold;
 }
 
 .compressed {
@@ -313,6 +336,8 @@ a {
 }
 
 .footer {
+  background-color: #25282B;
+  color: #C8C9C9;
   font-weight: bold;
   font-size: 14px;
   border-top: 2px solid #39393A;
@@ -320,15 +345,6 @@ a {
   padding: 20px 0px;
   margin-top: 50px;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-@media screen and (max-width: 1199px) {
-  .hero-image {
-    height: 400px;
-  }
-  .hero-text {
-    font-size: 40px;
-  }
 }
 
 @media screen and (max-width: 991px) {
