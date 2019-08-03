@@ -57,10 +57,13 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .headshot {
     padding-top: 50px;
   }
+}
+
+@media screen and (max-width: 768px) {
   .hero-text {
     font-size: 40px;
     top: 250px;
@@ -271,17 +274,16 @@
 
 .portfolio img {
   padding: 30px;
-  border: solid 2px black;
-}
-
-.portfolio h2 {
-  padding-top: 60px;
-  font-family: Arial, Helvetica, sans-serif;
+  border: solid 1px black;
 }
 
 .portfolio, .contact {
   padding-top: 50px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.padding-0 {
+  padding: 0px;
 }
 
 .contact {
@@ -302,11 +304,6 @@
   font-size: 14px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
 }
 
 a {
