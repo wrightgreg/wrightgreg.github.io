@@ -38,6 +38,40 @@
   padding-top: 100px;
 }
 
+.technology-logos {
+  margin: 0 auto;
+}
+
+.technology-logos img {
+  height: 75px;
+  width: auto;
+  padding: 0px 50px;
+  margin-top: 50px;
+}
+
+.tint {
+  position: relative;
+  float: left;
+  cursor: pointer;
+}
+
+.tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-transition: background .3s linear;
+  transition: background .3s linear;
+}
+
+.tint:hover:before {
+  background: none;
+}
+
 @media screen and (max-width: 1199px) {
   .image-container {
     height: 400px;
@@ -277,7 +311,7 @@
   border: solid 1px black;
 }
 
-.portfolio, .contact {
+.portfolio {
   padding-top: 50px;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -316,7 +350,10 @@ a {
   border-top: 2px solid #39393A;
   padding: 20px 0px;
   margin-top: 50px;
-  text-align: center;
+}
+
+.copywrite {
+  margin: 0 auto;
 }
 
 #title {
