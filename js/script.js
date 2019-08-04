@@ -9,11 +9,20 @@ $(document).ready(function(){
         }
     );
     $(window).on('scroll', function() {
-        if ($(window).scrollTop() >= 1) {
-            $('.navbar').addClass('compressed');
+        const topNav = document.getElementById("topNav");
+        if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+            topNav.classList.add("smaller");
         } else {
-            $('.navbar').removeClass('compressed');
-        }    
+            topNav.classList.remove("smaller");
+        }   
     });
 });
 
+function addResponsive() {
+    const topNav = document.getElementById("topNav");
+    if (topNav.classList.contains("responsive")) {
+    topNav.classList.remove("responsive");
+    } else {
+    topNav.classList.add("responsive");
+    }
+}

@@ -15,53 +15,131 @@
 		<script src="../js/script.js"></script>
 	</head>
 	<body>
-		<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+		<nav id="topNav" class="mainNav">
 			<div class="container">
-				<a class="navbar-brand" href="../index.html">GW</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item">
-						<a class="nav-link" href="../index.html">Home </a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" href="./resume.html">Resume</a>
-						</li>
-						<li class="nav-item active">
-						<a class="nav-link" href="#">Portfolio <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" href="./contact.html">Contact</a>
-						</li>
-					</ul>
-				</div>
+				<div class="navigationbar">
+				<div id="title">
+					<a href="../index.html">GW</a>
+					<span><a href="javascript:void(0);" class="icon" onclick="addResponsive()">
+						<div class="bar"></div>
+						<div class="bar"></div>
+						<div class="bar"></div>
+					</a></span></div>
+					<a href="../index.html">Home</a>
+					<a href="./resume.html">Resume</a>
+					<a class="current" href="#">Portfolio</a>
+					<a href="./contact.html">Contact</a>
+				</div>	  
 			</div>
 		</nav>
 		<section class="portfolio container-fluid">
             <div class="row">
                 <div class="col-lg-6 padding-0">
-					<a href="https://www.barings.com/us/guest/alternatives-real-estate/real-estate"><img class="img-responsive col-lg-12" src="../images/BaringsRealEstate.png" alt="Barings Real Estate" title="Barings Real Estate"></a>
-                </div>
+					<a data-target="#modal1" data-toggle="modal" href="#"><img class="img-responsive col-lg-12" src="../images/BaringsAlternativeInvestments.png" alt="Barings Alternative Investments" title="Barings Alternative Investments"></a>
+				</div>
                 <div class="col-lg-6 padding-0">
-                	<a href="https://www.barings.com/us/financial-advisor/alternative-investments"><img class="img-responsive col-lg-12" src="../images/BaringsAlternativeInvestments.png" alt="Barings Alternative Investments" title="Barings Alternative Investments"></a>
+						<a data-target="#modal2" data-toggle="modal" href="#"><img class="img-responsive col-lg-12" src="../images/BaringsRealEstate.png" alt="Barings Real Estate" title="Barings Real Estate"></a>
 				</div>
             </div>
             <div class="row">
 				<div class="col-lg-6 padding-0">
-					<a href="https://www.barings.com/us/guest/expect-more-from-your-core?WT.mc_id=Expect_More_From_Your_Core"><img class="img-responsive col-lg-12" src="../images/BaringsExpectMoreFromYourCore.png" alt="Barings Expect More From Your Core" title="Barings Expect More From Your Core"></a>
+						<a data-target="#modal3" data-toggle="modal" href="#"><img class="img-responsive col-lg-12" src="../images/BaringsExpectMoreFromYourCore.png" alt="Barings Expect More From Your Core" title="Barings Expect More From Your Core"></a>
 				</div>
 				<div class="col-lg-6 padding-0">
-					<a href="https://www.barings.com/us/financial-advisor/2018-trends-to-watch"><img class="img-responsive col-lg-12" src="../images/Barings2018TrendsToWatch.png" alt="Barings 2018 Trends to Watch" title="Barings 2018 Trends to Watch"></a>
+						<a data-target="#modal4" data-toggle="modal" href="#"><img class="img-responsive col-lg-12" src="../images/Barings2018TrendsToWatch.png" alt="Barings 2018 Trends to Watch" title="Barings 2018 Trends to Watch"></a>
 				</div>
             </div>
             <div class="row">
 				<div class="col-lg-6 padding-0">
-					<a href="https://www.barings.com/us/financial-advisor/five-trends-to-watch-in-2019"><img class="img-responsive col-lg-12" src="../images/BaringsFiveTrendsToWatchIn2019.png" alt="Barings Five Trends to Watch in 2019" title="Barings Five Trends to Watch in 2019"></a>
+						<a data-target="#modal5" data-toggle="modal" href="#"><img class="img-responsive col-lg-12" src="../images/BaringsFiveTrendsToWatchIn2019.png" alt="Barings Five Trends to Watch in 2019" title="Barings Five Trends to Watch in 2019"></a>
 				</div>
             </div>
 		</section>
+		<div class="modal fade" id="modal1" role="dialog">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Barings Alternative Investments</h5>
+					<button type="button" class="close" data-dismiss="modal">
+					<span>&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<a href="https://www.barings.com/us/financial-advisor/alternative-investments" alt="Barings Real Estate" title="Barings Real Estate"><img class="img-responsive col-lg-12" src="../images/BaringsAlternativeInvestments.png" alt="Barings Alternative Investments" title="Barings Alternative Investments"></a>
+					<br>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in pretium est, vitae aliquet arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse odio nunc, viverra eu enim sed, maximus rhoncus eros. Proin ac ligula vel arcu elementum maximus. Cras odio lorem, bibendum a magna nec, tempus efficitur ante. In tempor quam at velit blandit feugiat. In eget ante maximus, condimentum metus eu, volutpat diam. Ut tincidunt ex vitae elementum placerat. Cras vulputate dui massa, a tristique justo placerat sed. Maecenas finibus, lacus non tempus sagittis, dui tellus mollis lorem, eget sodales ipsum turpis vel enim. In consectetur ultricies fermentum. Proin rutrum sagittis luctus. Quisque in rhoncus ex, eget pharetra massa.
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modal2" role="dialog">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Barings Alternative Investments - Real Estate</h5>
+					<button type="button" class="close" data-dismiss="modal">
+					<span>&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<a href="https://www.barings.com/us/financial-advisor/alternative-investments" alt="Barings Real Estate" title="Barings Real Estate"><img class="img-responsive col-lg-12" src="../images/BaringsRealEstate.png" alt="Barings Real Estate" title="Barings Real Estate"></a>
+					<br>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in pretium est, vitae aliquet arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse odio nunc, viverra eu enim sed, maximus rhoncus eros. Proin ac ligula vel arcu elementum maximus. Cras odio lorem, bibendum a magna nec, tempus efficitur ante. In tempor quam at velit blandit feugiat. In eget ante maximus, condimentum metus eu, volutpat diam. Ut tincidunt ex vitae elementum placerat. Cras vulputate dui massa, a tristique justo placerat sed. Maecenas finibus, lacus non tempus sagittis, dui tellus mollis lorem, eget sodales ipsum turpis vel enim. In consectetur ultricies fermentum. Proin rutrum sagittis luctus. Quisque in rhoncus ex, eget pharetra massa.
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modal3" role="dialog">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Barings Active Short Duration</h5>
+					<button type="button" class="close" data-dismiss="modal">
+					<span>&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<a href="https://www.barings.com/us/guest/expect-more-from-your-core?WT.mc_id=Expect_More_From_Your_Core" alt="Barings Expect More From Your Core" title="Barings Expect More From Your Core"><img class="img-responsive col-lg-12" src="../images/BaringsExpectMoreFromYourCore.png" alt="Barings Expect More From Your Core" title="Barings Expect More From Your Core"></a>
+					<br>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in pretium est, vitae aliquet arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse odio nunc, viverra eu enim sed, maximus rhoncus eros. Proin ac ligula vel arcu elementum maximus. Cras odio lorem, bibendum a magna nec, tempus efficitur ante. In tempor quam at velit blandit feugiat. In eget ante maximus, condimentum metus eu, volutpat diam. Ut tincidunt ex vitae elementum placerat. Cras vulputate dui massa, a tristique justo placerat sed. Maecenas finibus, lacus non tempus sagittis, dui tellus mollis lorem, eget sodales ipsum turpis vel enim. In consectetur ultricies fermentum. Proin rutrum sagittis luctus. Quisque in rhoncus ex, eget pharetra massa.
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modal4" role="dialog">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">2018: Trends to Watch</h5>
+					<button type="button" class="close" data-dismiss="modal">
+					<span>&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<a href="https://www.barings.com/us/financial-advisor/2018-trends-to-watch" alt="Barings 2018 Trends to Watch" title="Barings 2018 Trends to Watch"><img class="img-responsive col-lg-12" src="../images/Barings2018TrendsToWatch.png" alt="Barings 2018 Trends to Watch" title="Barings 2018 Trends to Watch"></a>
+					<br>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in pretium est, vitae aliquet arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse odio nunc, viverra eu enim sed, maximus rhoncus eros. Proin ac ligula vel arcu elementum maximus. Cras odio lorem, bibendum a magna nec, tempus efficitur ante. In tempor quam at velit blandit feugiat. In eget ante maximus, condimentum metus eu, volutpat diam. Ut tincidunt ex vitae elementum placerat. Cras vulputate dui massa, a tristique justo placerat sed. Maecenas finibus, lacus non tempus sagittis, dui tellus mollis lorem, eget sodales ipsum turpis vel enim. In consectetur ultricies fermentum. Proin rutrum sagittis luctus. Quisque in rhoncus ex, eget pharetra massa.
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modal5" role="dialog">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Five Trends to Watch in 2019</h5>
+					<button type="button" class="close" data-dismiss="modal">
+					<span>&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<a href="https://www.barings.com/us/financial-advisor/five-trends-to-watch-in-2019" alt="Barings Five Trends to Watch in 2019" title="Barings Five Trends to Watch in 2019"><img class="img-responsive col-lg-12" src="../images/BaringsFiveTrendsToWatchIn2019.png" alt="Barings Five Trends to Watch in 2019" title="Barings Five Trends to Watch in 2019"></a>
+					<br>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in pretium est, vitae aliquet arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse odio nunc, viverra eu enim sed, maximus rhoncus eros. Proin ac ligula vel arcu elementum maximus. Cras odio lorem, bibendum a magna nec, tempus efficitur ante. In tempor quam at velit blandit feugiat. In eget ante maximus, condimentum metus eu, volutpat diam. Ut tincidunt ex vitae elementum placerat. Cras vulputate dui massa, a tristique justo placerat sed. Maecenas finibus, lacus non tempus sagittis, dui tellus mollis lorem, eget sodales ipsum turpis vel enim. In consectetur ultricies fermentum. Proin rutrum sagittis luctus. Quisque in rhoncus ex, eget pharetra massa.
+				</div>
+				</div>
+			</div>
+		</div>
 		<footer class="footer">
 			<p>&copy; 2019 Greg Wright. All Rights Reserved.</p>
 		</footer>
