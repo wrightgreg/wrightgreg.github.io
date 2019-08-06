@@ -432,7 +432,6 @@ a {
 
 @media screen and (max-width: 768px) {
   .navigationbar {
-    position: relative;
     display: block;
   }
   .mainNav a:not(:first-child) {
