@@ -1,15 +1,15 @@
 $(document).ready(function(){
-    $('#resumeTitle').fadeIn('slow');
-    $('#slowFadeIn').fadeIn(4000);
-    $('#resume-download').hover(
+    $('#resume-title').fadeIn('slow');
+    $('#slow-fade-in').fadeIn(4000);
+    $('.resume-button').hover(
         function(){
-            $(this).html('Thank you!');
+            $(this).text('Thank you!');
         }, function(){
             $(this).text('Download My Resume');
         }
     );
     $(window).on('scroll', function() {
-        const topNav = document.getElementById("topNav");
+        const topNav = document.getElementById("top-nav");
         if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
             topNav.classList.add("smaller");
         } else {
@@ -19,7 +19,7 @@ $(document).ready(function(){
 });
 
 function addResponsive() {
-    const topNav = document.getElementById("topNav");
+    const topNav = document.getElementById("top-nav");
     if (topNav.classList.contains("responsive")) {
     topNav.classList.remove("responsive");
     } else {

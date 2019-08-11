@@ -1,15 +1,20 @@
+.about-me {
+  padding-top: 50px;
+}
+
 .image-container {
   overflow: hidden;
-  height: 600px;
+  height: 400px;
   position: relative;
   width: 100%;
 }
 
 .hero-image {
-  background-image: url("../images/hero.png");
+  background-image: url(../images/hero.png);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  background-size: cover;
   top: 0;
   position: absolute;
   display: block;
@@ -21,12 +26,12 @@
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   position: absolute;
-  top: 350px;
+  top: 250px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: #FFFFFF;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: bold;
   z-index: 2;
   border: 3px solid #f1f1f1;
@@ -35,20 +40,21 @@
   width: 80%;
 }
 
-.about-me {
-  padding-top: 100px;
-  font-family: Arial, Helvetica, sans-serif;
+.headshot img {
+  width: 100%;
+  padding-top: 50px;
 }
 
 .technology-logos {
-  margin: 0 auto;
+  overflow: hidden;
 }
 
 .technology-logos img {
-  height: 75px;
+  height: 45px;
   width: auto;
-  padding: 0px 35px;
-  margin-top: 50px;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 20px;
 }
 
 .tint {
@@ -74,7 +80,21 @@
   background: none;
 }
 
-@media screen and (max-width: 1199px) {
+@media only screen and (min-width: 768px) {
+  .description {
+    float: left;
+    width: 50%;
+  }
+  .headshot {
+    float: right;
+    width: 50%;
+  }
+  .headshot img {
+    padding-top: 0px;
+  }
+  .hero-text {
+    top: 250px;
+  }
   .image-container {
     height: 400px;
   }
@@ -83,27 +103,96 @@
   }
   .hero-text {
     font-size: 40px;
-    top: 275px;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 991px) {
-  .hero-text {
     top: 250px;
   }
-}
-
-@media screen and (max-width: 991px) {
-  .headshot {
-    padding-top: 50px;
+  .technology-logos {
+    clear: both;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 1200px) {
+  .image-container {
+    height: 600px;
+  }
   .hero-text {
-    font-size: 40px;
-    top: 250px;
+    top: 350px;
+    font-size: 60px;
   }
+  .headshot img {
+    padding-top: 0px;
+    max-width: 500px;
+    padding-left: 50px;
+  }
+  .image-container {
+    height: 600px;
+  }
+  .description {
+    width: 50%;
+  }
+  .technology-logos {
+    margin-top: 50px;
+  }
+  .technology-logos img {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 50px;
+  }
+}
+
+.resume-header {
+  height: 90vh;
+  text-align: center;
+}
+
+.professional-experience-header {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(229, 229, 229, 0))), url("../images/professional-experience.jpg");
+  background: linear-gradient(to bottom, black 0%, rgba(229, 229, 229, 0) 100%), url("../images/professional-experience.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  color: #FFFFFF;
+  padding-top: 120px;
+  text-align: center;
+  padding-left: 0px;
+  font-size: 40px;
+  line-height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.education-header {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(229, 229, 229, 0))), url("../images/education.jpeg");
+  background: linear-gradient(to bottom, black 0%, rgba(229, 229, 229, 0) 100%), url("../images/education.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  color: #FFFFFF;
+  padding-top: 120px;
+  text-align: center;
+  padding-left: 0px;
+  font-size: 40px;
+  line-height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.community-involvement-header {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(229, 229, 229, 0))), url("../images/eagle.jpg");
+  background: linear-gradient(to bottom, black 0%, rgba(229, 229, 229, 0) 100%), url("../images/eagle.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  color: #FFFFFF;
+  padding-top: 120px;
+  text-align: center;
+  padding-left: 0px;
+  font-size: 40px;
+  line-height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .resume {
@@ -113,11 +202,12 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#resume-download {
+.pdf-button {
   margin: 20px auto;
   margin-bottom: 0px;
   height: 70px;
-  width: 700px;
+  width: 100%;
+  max-width: 700px;
   padding: 25px 30px;
   border: solid 2px #000000;
   text-align: center;
@@ -126,34 +216,34 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
-  display: inline-block;
   cursor: pointer;
 }
 
-.take-resume {
+.pdf-button-title {
   margin: 0 auto;
   text-align: center;
   padding-top: 30px;
+  font-size: 18px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#resume-download-link:hover {
+#pdf-download-link:hover {
   color: #000000;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#resumeTitle {
+#resume-title {
   color: #000000;
   display: none;
   text-align: center;
-  font-size: 100px;
+  font-size: 70px;
   padding-top: 15vh;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#slowFadeIn {
+#slow-fade-in {
   display: none;
   left: 0;
   right: 0;
@@ -163,163 +253,69 @@
   font-weight: bold;
 }
 
+.company {
+  font-size: 22px;
+  line-height: 26px;
+}
+
 .job-title {
+  font-size: 18px;
+  line-height: 20px;
   display: inline;
 }
 
 .year {
-  float: right;
+  font-size: 14px;
+  line-height: 16px;
 }
 
-.professional-experience {
-  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(229, 229, 229, 0))), url("../images/professional-experience.jpg");
-  background: linear-gradient(to bottom, black 0%, rgba(229, 229, 229, 0) 100%), url("../images/professional-experience.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
-  width: 100%;
-  height: 300px;
-  color: #FFFFFF;
-  padding-top: 125px;
-  padding-left: 20px;
-  font-size: 50px;
-  line-height: 56px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.education {
-  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(229, 229, 229, 0))), url("../images/education.jpeg");
-  background: linear-gradient(to bottom, black 0%, rgba(229, 229, 229, 0) 100%), url("../images/education.jpeg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
-  width: 100%;
-  height: 300px;
-  color: #FFFFFF;
-  padding-top: 125px;
-  padding-left: 20px;
-  font-size: 50px;
-  line-height: 56px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.community-involvement {
-  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(229, 229, 229, 0))), url("../images/eagle.jpg");
-  background: linear-gradient(to bottom, black 0%, rgba(229, 229, 229, 0) 100%), url("../images/eagle.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
-  width: 100%;
-  height: 300px;
-  color: #FFFFFF;
-  padding-top: 125px;
-  padding-left: 20px;
-  font-size: 50px;
-  line-height: 56px;
-  font-family: Arial, Helvetica, sans-serif;
-  padding-top: 100px;
-}
-
-@media screen and (max-width: 1200px) {
-  .professional-experience {
-    background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(229, 229, 229, 0))), url("../images/professional-experience.jpg");
-    background: linear-gradient(to bottom, black 0%, rgba(229, 229, 229, 0) 100%), url("../images/professional-experience.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
-    width: 100%;
-    height: 300px;
-    color: #FFFFFF;
-    padding-top: 125px;
-    padding-left: 20px;
-    font-size: 50px;
-    line-height: 56px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-size: cover;
+@media only screen and (min-width: 991px) {
+  .pdf-download {
+    clear: both;
+    padding-top: 20px;
   }
+  .pdf-button-title {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
   .education {
-    background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(229, 229, 229, 0))), url("../images/education.jpeg");
-    background: linear-gradient(to bottom, black 0%, rgba(229, 229, 229, 0) 100%), url("../images/education.jpeg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
-    width: 100%;
-    height: 300px;
-    color: #FFFFFF;
-    padding-top: 125px;
-    padding-left: 20px;
-    font-size: 50px;
-    line-height: 56px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-size: cover;
+    float: right;
+    width: 50%;
   }
   .community-involvement {
-    background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(229, 229, 229, 0))), url("../images/eagle.jpg");
-    background: linear-gradient(to bottom, black 0%, rgba(229, 229, 229, 0) 100%), url("../images/eagle.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
-    width: 100%;
-    height: 300px;
-    color: #FFFFFF;
+    float: left;
+    width: 50%;
+  }
+  .professional-experience-header {
     padding-top: 125px;
     padding-left: 20px;
     font-size: 50px;
     line-height: 56px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-size: cover;
   }
-}
-
-@media screen and (max-width: 992px) {
-  #resumeTitle {
-    font-size: 70px;
+  .education-header {
+    padding-top: 125px;
+    padding-left: 20px;
+    font-size: 50px;
+    line-height: 56px;
   }
-  .professional-experience {
-    padding-top: 120px;
-    text-align: center;
-    padding-left: 0px;
-    font-size: 40px;
-    line-height: 40px;
-  }
-  .education {
-    padding-top: 120px;
-    text-align: center;
-    padding-left: 0px;
-    font-size: 40px;
-    line-height: 40px;
-  }
-  .community-involvement {
-    padding-top: 120px;
-    text-align: center;
-    padding-left: 0px;
-    font-size: 40px;
-    line-height: 40px;
-  }
-  #resumeTitle {
-    font-size: 70px;
-  }
-  .about-me {
-    padding-top: 60px;
+  .community-involvement-header {
+    padding-top: 125px;
+    padding-left: 20px;
+    font-size: 50px;
+    line-height: 56px;
   }
 }
 
 .portfolio {
   margin-top: 150px;
-}
-
-.portfolio img {
-  padding: 30px;
-  border: solid 1px black;
-}
-
-.portfolio {
   padding-top: 50px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.padding-0 {
-  padding: 0px;
+.portfolio img {
+  width: 100%;
 }
 
 .contact {
@@ -342,6 +338,21 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
 a {
   text-decoration: none;
   color: #000000;
@@ -352,6 +363,7 @@ a {
   border-top: 2px solid #39393A;
   padding: 20px 0px;
   margin-top: 50px;
+  clear: both;
 }
 
 .copywrite {
@@ -362,6 +374,7 @@ a {
   font-size: 40px;
   font-weight: bold;
   color: #25282B;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #title a:hover {
@@ -370,20 +383,10 @@ a {
 }
 
 .navigationbar {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  display: block;
 }
 
-.mainNav {
+.main-nav {
   padding: 30px;
   background-color: #FFFFFF;
   color: #FFFFFF;
@@ -393,28 +396,57 @@ a {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 99;
+  z-index: 999;
   border-bottom: solid 2px #39393A;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.mainNav .icon {
-  display: none;
-}
-
-.mainNav a:not(:first-child) {
+.main-nav a:not(:first-child) {
   font-size: 20px;
   color: #C8C9C9;
   text-decoration: none;
 }
 
-.mainNav a:hover:not(:first-child) {
+.main-nav a:hover:not(:first-child) {
   text-decoration: none;
   color: #25282B;
 }
 
-.mainNav a.current {
+.main-nav a.current {
   text-decoration: none;
   color: #25282B;
+}
+
+.main-nav a:not(:first-child) {
+  display: none;
+}
+
+.main-nav a.icon {
+  float: right;
+  display: block;
+  padding-top: 5px;
+}
+
+.main-nav.responsive {
+  position: absolute;
+}
+
+.main-nav.smaller {
+  padding: 10px;
+}
+
+.main-nav.smaller.responsive {
+  position: fixed;
+}
+
+.main-nav.responsive a:not(:first-child) {
+  display: block;
+  float: none;
+  text-align: left;
+}
+
+.main-nav.responsive a.icon {
+  float: right;
 }
 
 .bar {
@@ -424,41 +456,30 @@ a {
   margin: 6px 0;
 }
 
-@media screen and (min-width: 769px) {
-  .mainNav.smaller {
-    padding: 0px 20px;
+@media only screen and (min-width: 768px) {
+  .main-nav.smaller {
+    padding: 5px 20px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 1200px) {
   .navigationbar {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
-  .mainNav a:not(:first-child) {
+  .main-nav a.icon {
     display: none;
   }
-  .mainNav a.icon {
-    float: right;
+  .main-nav a:not(:first-child) {
     display: block;
-    padding-top: 15px;
-  }
-  .mainNav.responsive {
-    position: absolute;
-  }
-  .mainNav.smaller {
-    padding: 7px;
-  }
-  .mainNav.smaller.responsive {
-    position: -webkit-sticky;
-    position: sticky;
-  }
-  .mainNav.responsive a:not(:first-child) {
-    display: block;
-    float: none;
-    text-align: left;
-  }
-  .mainNav.responsive a.icon {
-    float: right;
   }
 }
 /*# sourceMappingURL=main.css.map */
